@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Tatooz - Tattoo Studio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    
+    <!-- SVG Shatter Mask Definition -->
+    <svg width="0" height="0" style="position:absolute; width:0; height:0;">
+        <defs>
+            <clipPath id="shatter-mask" clipPathUnits="objectBoundingBox">
+                <circle cx="0.2" cy="0.3" r="0" class="blob" style="transition-delay: 0s" />
+                <circle cx="0.8" cy="0.2" r="0" class="blob" style="transition-delay: 0.1s" />
+                <circle cx="0.5" cy="0.8" r="0" class="blob" style="transition-delay: 0.2s" />
+                <circle cx="0.3" cy="0.6" r="0" class="blob" style="transition-delay: 0.05s" />
+                <circle cx="0.7" cy="0.6" r="0" class="blob" style="transition-delay: 0.15s" />
+                <circle cx="0.5" cy="0.5" r="0" class="blob" style="transition-delay: 0.25s" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_black.png" alt="Astra Tatooz Logo" class="nav-logo-img">
+            </a>
+        </div>
+        
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav-right">
+            <a href="contact.html">CONTACT</a>
+            <a href="policy.html">POLICY</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="title-wrapper">
+            <h1 class="huge-title">ASTRA TATOOZ</h1>
+            <div class="hero-subtitles">
+                <p class="subtitle-left">TATTOO STUDIO</p>
+                <p class="subtitle-right">WE CREATE MEMORIES THAT NEVER FADE</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Call to Action -->
+    <div class="cta-container">
+        <a href="#" class="btn-outline" id="bookBtn">BOOK EXPERIENCE &rarr;</a>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="grid-item">
+            <img src="assets/colored4.png" alt="Tattoo" class="hover-color-img" />
+        </div>
+        <div class="grid-item">
+            <img src="assets/colored5.png" alt="Tattoo" class="hover-color-img" />
+        </div>
+        <div class="grid-item">
+            <img src="assets/colored2.png" alt="Tattoo" class="hover-color-img" />
+        </div>
+        <div class="grid-item">
+            <img src="assets/colored3.png" alt="Tattoo" class="hover-color-img" />
+        </div>
+        <div class="grid-item">
+            <img src="assets/colored1.png" alt="Tattoo" class="hover-color-img" />
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testi-header">
+            <span class="testi-subtitle">TESTIMONIALS</span>
+            <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                <h2 class="testi-title" style="margin-bottom: 0;">What our clients say</h2>
+                <a href="https://maps.app.goo.gl/e1iSMsgkid4FcKLi8?g_st=ic" target="_blank" class="btn-outline">Read all &rarr;</a>
+            </div>
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-track track-top">
+                <!-- REVIEW 1 -->
+                <div class="review-card">
+                    <p class="review-author">Shiva Shakthi</p>
+                    <div class="review-header">
+                        <span class="stars">★★★★★</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </div>
+                    <p class="review-text">"I recently got this custom tattoo piece done at Astra and Lohith was my artist. It was done with fixed appointment date and time and it took us 2 days to finish including breaks, it was really a smooth and hygienic experience. The music studio and people all friendly and anybody can definitely close to get your tattoos from here at this tattoo studio in Kammanahalli. ☺️"</p>
+                    <div class="review-images">
+                        <img src="assets/review1.jpeg" alt="Tattoo Review">
+                    </div>
+                    </div>
+                <!-- REVIEW 2 -->
+                <div class="review-card">
+                    <p class="review-author">Darshan R</p>
+                    <div class="review-header">
+                        <span class="stars">★★★★★</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </div>
+                    <p class="review-text">"Highly recommend this studio if you want quality work with professionalism. The artist’s precision, creativity, and dedication really show in the final tattoo. The ambience of the studio is welcoming and relaxing, and hygiene was maintained at a very high standard. I appreciated the genuine care and attention given throughout the session. They never rushed the process and made sure I was comfortable the whole time. Great pricing for such premium work."</p>
+                    <div class="review-images">
+                        <img src="assets/review2.jpeg" alt="Tattoo Review">
+                    </div>
+                    </div>
+                <!-- REVIEW 3 -->
+                <div class="review-card">
+                    <p class="review-author">Kiran Kumar</p>
+                    <div class="review-header">
+                        <span class="stars">★★★★★</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </div>
+                    <p class="review-text">"Wonderful experience with professional artist and got my calf tattoed with atmost precise details done by Jobey and Nihal and lohit! Lohit was my boost when i was in pain and helped me. Thanks team astra.. Recommend this place for everyone who is looking to get inked.."</p>
+                    <div class="review-images">
+                        <img src="assets/review3.jpeg" alt="Tattoo Review">
+                    </div>
+                    </div>
+                <!-- REVIEW 4 -->
+                <div class="review-card">
+                    <p class="review-author">Aayush Bhat</p>
+                    <div class="review-header">
+                        <span class="stars">★★★★★</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </div>
+                    <p class="review-text">"I had an amazing experience here. Everyone there is extremely friendly and helpful and they guide you in the right way. One thing I really appreciate is how they advise you on what your tattoo will look like in the future once it’s healed. I’ve had majority of my tattoos done by Adam and the artistry is insane. I’ve also got my recent piece done by Nihaal who was so helpful and did an incredible job on my tattoo. The detail is off the charts"</p>
+                    <div class="review-images multiple">
+                        <img src="assets/review4_1.jpeg" alt="Tattoo Review">
+                        <img src="assets/review4_2.jpeg" alt="Tattoo Review">
+                    </div>
+                    </div>
+                <!-- REVIEW 5 -->
+                <div class="review-card">
+                    <p class="review-author">Sumith poojari</p>
+                    <div class="review-header">
+                        <span class="stars">★★★★★</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </div>
+                    <p class="review-text">"I had a wonderful experience at Astra Tattoos. The artist Nihal dinesh did an excellent job . I absolutely loved his work. The hospitality was amazing everyone was very sweet, friendly, and made me feel comfortable throughout the process. Nihal patiently explained everything, including the complete aftercare, which really helped and gave me confidence. The studio was clean and professional, and the overall vibe was very positive. Highly recommended if you’re looking for quality work and great service in Bangalore!"</p>
+                    <div class="review-images">
+                        <img src="assets/review5.png" alt="Tattoo Review">
+                    </div>
+                    </div>
+                <!-- REVIEW 6 -->
+                <div class="review-card">
+                    <p class="review-author">Rithwik</p>
+                    <div class="review-header">
+                        <span class="stars">★★★★★</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </div>
+                    <p class="review-text">"Got my first custom unique tattoo from astra tatooz . Artist Nihal drawn the design in his sketch book which made my mind to get the tattoo. I have never seen an artist preparing a design in sketchbook. And the tattoo came-out really well. Big thanks to team Astra for the tattoo and providing me the best experience in a tattoo studio."</p>
+                    <div class="review-images multiple">
+                        <img src="assets/review6_1.jpeg" alt="Tattoo Review">
+                        <img src="assets/review6_2.jpeg" alt="Tattoo Review">
+                    </div>
+                    </div>
+                
+                <!-- DUPLICATE SET 1-6 FOR SEAMLESS LOOP -->
+                <div class="review-card">
+                    <p class="review-author">Shiva Shakthi</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I recently got this custom tattoo piece done at Astra and Lohith was my artist. It was done with fixed appointment date and time and it took us 2 days to finish including breaks, it was really a smooth and hygienic experience. The music studio and people all friendly and anybody can definitely close to get your tattoos from here at this tattoo studio in Kammanahalli. ☺️"</p><div class="review-images"><img src="assets/review1.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Darshan R</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Highly recommend this studio if you want quality work with professionalism. The artist’s precision, creativity, and dedication really show in the final tattoo. The ambience of the studio is welcoming and relaxing, and hygiene was maintained at a very high standard. I appreciated the genuine care and attention given throughout the session. They never rushed the process and made sure I was comfortable the whole time. Great pricing for such premium work."</p><div class="review-images"><img src="assets/review2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Kiran Kumar</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Wonderful experience with professional artist and got my calf tattoed with atmost precise details done by Jobey and Nihal and lohit! Lohit was my boost when i was in pain and helped me. Thanks team astra.. Recommend this place for everyone who is looking to get inked.."</p><div class="review-images"><img src="assets/review3.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Aayush Bhat</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I had an amazing experience here. Everyone there is extremely friendly and helpful and they guide you in the right way. One thing I really appreciate is how they advise you on what your tattoo will look like in the future once it’s healed. I’ve had majority of my tattoos done by Adam and the artistry is insane. I’ve also got my recent piece done by Nihaal who was so helpful and did an incredible job on my tattoo. The detail is off the charts"</p><div class="review-images multiple"><img src="assets/review4_1.jpeg" alt="Tattoo Review"><img src="assets/review4_2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Sumith poojari</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I had a wonderful experience at Astra Tattoos. The artist Nihal dinesh did an excellent job . I absolutely loved his work. The hospitality was amazing everyone was very sweet, friendly, and made me feel comfortable throughout the process. Nihal patiently explained everything, including the complete aftercare, which really helped and gave me confidence. The studio was clean and professional, and the overall vibe was very positive. Highly recommended if you’re looking for quality work and great service in Bangalore!"</p><div class="review-images"><img src="assets/review5.png" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Rithwik</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Got my first custom unique tattoo from astra tatooz . Artist Nihal drawn the design in his sketch book which made my mind to get the tattoo. I have never seen an artist preparing a design in sketchbook. And the tattoo came-out really well. Big thanks to team Astra for the tattoo and providing me the best experience in a tattoo studio."</p><div class="review-images multiple"><img src="assets/review6_1.jpeg" alt="Tattoo Review"><img src="assets/review6_2.jpeg" alt="Tattoo Review"></div></div>
+            </div>
+
+            <!-- BOTTOM TRACK: Starts with 4,5,6, then 1,2,3... duplicated -->
+            <div class="marquee-track track-bottom">
+                <div class="review-card">
+                    <p class="review-author">Aayush Bhat</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I had an amazing experience here. Everyone there is extremely friendly and helpful and they guide you in the right way. One thing I really appreciate is how they advise you on what your tattoo will look like in the future once it’s healed. I’ve had majority of my tattoos done by Adam and the artistry is insane. I’ve also got my recent piece done by Nihaal who was so helpful and did an incredible job on my tattoo. The detail is off the charts"</p><div class="review-images multiple"><img src="assets/review4_1.jpeg" alt="Tattoo Review"><img src="assets/review4_2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Sumith poojari</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I had a wonderful experience at Astra Tattoos. The artist Nihal dinesh did an excellent job . I absolutely loved his work. The hospitality was amazing everyone was very sweet, friendly, and made me feel comfortable throughout the process. Nihal patiently explained everything, including the complete aftercare, which really helped and gave me confidence. The studio was clean and professional, and the overall vibe was very positive. Highly recommended if you’re looking for quality work and great service in Bangalore!"</p><div class="review-images"><img src="assets/review5.png" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Rithwik</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Got my first custom unique tattoo from astra tatooz . Artist Nihal drawn the design in his sketch book which made my mind to get the tattoo. I have never seen an artist preparing a design in sketchbook. And the tattoo came-out really well. Big thanks to team Astra for the tattoo and providing me the best experience in a tattoo studio."</p><div class="review-images multiple"><img src="assets/review6_1.jpeg" alt="Tattoo Review"><img src="assets/review6_2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Shiva Shakthi</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I recently got this custom tattoo piece done at Astra and Lohith was my artist. It was done with fixed appointment date and time and it took us 2 days to finish including breaks, it was really a smooth and hygienic experience. The music studio and people all friendly and anybody can definitely close to get your tattoos from here at this tattoo studio in Kammanahalli. ☺️"</p><div class="review-images"><img src="assets/review1.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Darshan R</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Highly recommend this studio if you want quality work with professionalism. The artist’s precision, creativity, and dedication really show in the final tattoo. The ambience of the studio is welcoming and relaxing, and hygiene was maintained at a very high standard. I appreciated the genuine care and attention given throughout the session. They never rushed the process and made sure I was comfortable the whole time. Great pricing for such premium work."</p><div class="review-images"><img src="assets/review2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Kiran Kumar</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Wonderful experience with professional artist and got my calf tattoed with atmost precise details done by Jobey and Nihal and lohit! Lohit was my boost when i was in pain and helped me. Thanks team astra.. Recommend this place for everyone who is looking to get inked.."</p><div class="review-images"><img src="assets/review3.jpeg" alt="Tattoo Review"></div></div>
+                <!-- DUPLICATE 2 for Bottom Track-->
+                <div class="review-card">
+                    <p class="review-author">Aayush Bhat</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I had an amazing experience here. Everyone there is extremely friendly and helpful and they guide you in the right way. One thing I really appreciate is how they advise you on what your tattoo will look like in the future once it’s healed. I’ve had majority of my tattoos done by Adam and the artistry is insane. I’ve also got my recent piece done by Nihaal who was so helpful and did an incredible job on my tattoo. The detail is off the charts"</p><div class="review-images multiple"><img src="assets/review4_1.jpeg" alt="Tattoo Review"><img src="assets/review4_2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Sumith poojari</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I had a wonderful experience at Astra Tattoos. The artist Nihal dinesh did an excellent job . I absolutely loved his work. The hospitality was amazing everyone was very sweet, friendly, and made me feel comfortable throughout the process. Nihal patiently explained everything, including the complete aftercare, which really helped and gave me confidence. The studio was clean and professional, and the overall vibe was very positive. Highly recommended if you’re looking for quality work and great service in Bangalore!"</p><div class="review-images"><img src="assets/review5.png" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Rithwik</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Got my first custom unique tattoo from astra tatooz . Artist Nihal drawn the design in his sketch book which made my mind to get the tattoo. I have never seen an artist preparing a design in sketchbook. And the tattoo came-out really well. Big thanks to team Astra for the tattoo and providing me the best experience in a tattoo studio."</p><div class="review-images multiple"><img src="assets/review6_1.jpeg" alt="Tattoo Review"><img src="assets/review6_2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Shiva Shakthi</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"I recently got this custom tattoo piece done at Astra and Lohith was my artist. It was done with fixed appointment date and time and it took us 2 days to finish including breaks, it was really a smooth and hygienic experience. The music studio and people all friendly and anybody can definitely close to get your tattoos from here at this tattoo studio in Kammanahalli. ☺️"</p><div class="review-images"><img src="assets/review1.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Darshan R</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Highly recommend this studio if you want quality work with professionalism. The artist’s precision, creativity, and dedication really show in the final tattoo. The ambience of the studio is welcoming and relaxing, and hygiene was maintained at a very high standard. I appreciated the genuine care and attention given throughout the session. They never rushed the process and made sure I was comfortable the whole time. Great pricing for such premium work."</p><div class="review-images"><img src="assets/review2.jpeg" alt="Tattoo Review"></div></div>
+                <div class="review-card">
+                    <p class="review-author">Kiran Kumar</p><div class="review-header"><span class="stars">★★★★★</span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><p class="review-text">"Wonderful experience with professional artist and got my calf tattoed with atmost precise details done by Jobey and Nihal and lohit! Lohit was my boost when i was in pain and helped me. Thanks team astra.. Recommend this place for everyone who is looking to get inked.."</p><div class="review-images"><img src="assets/review3.jpeg" alt="Tattoo Review"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="premium-about-section">
+        <div class="about-header" style="text-align: center; margin-bottom: 5rem;">
+            <span class="section-subtitle">ABOUT US</span>
+            <h2 class="about-section-title" style="margin: 0;">About our studio</h2>
+        </div>
+        <div class="about-container">
+            <!-- Row 1: Text Left, Image Right -->
+            <div class="about-row">
+                <div class="about-text">
+                    <h2>Crafting art that lasts a lifetime</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/about1.png" alt="About our tattoo process" />
+                </div>
+            </div>
+            
+            <!-- Row 2: Image Left, Text Right -->
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="assets/about2.png" alt="Inside our tattoo studio" />
+                </div>
+                <div class="about-text">
+                    <h2>Elevating your body art</h2>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section class="bottom-cta-section">
+        <div class="bottom-cta-container">
+            <span class="section-subtitle">READY TO GET INKED?</span>
+            <h2 class="bottom-cta-title">Book Your Slot Today</h2>
+            <p class="bottom-cta-desc">Consult with our master artists and transform your vision into timeless body art.</p>
+            <button class="btn-primary open-modal-btn">BOOK A SLOT &rarr;</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <a href="index.html" class="footer-logo">ASTRA TATOOZ</a>
+                <p>Elevating body art through precision, artistry, and custom design in Bangalore.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Instagram" onclick="event.preventDefault()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook" onclick="event.preventDefault()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube" onclick="event.preventDefault()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>STUDIO INFO</h4>
+                <p><strong>Location:</strong><br>#42, 100 Feet Rd, Kammanahalli, Bengaluru, Karnataka 560084</p>
+                <p><strong>Hours:</strong><br>Mon – Sun: 11:00 AM – 9:00 PM</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT</h4>
+                <p><strong>Phone:</strong><br>+91 98765 43210</p>
+                <p><strong>Email:</strong><br>hello@astratatooz.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Astra Tatooz. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="policy.html">Privacy Policy</a>
+                <span>&bull;</span>
+                <a href="policy.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal-overlay" id="bookingModal">
+        <div class="booking-modal">
+            <button class="close-btn" id="closeModalBtn">&times;</button>
+            <div id="bookingFormContainer">
+                <h2>Book Your Experience</h2>
+                <p>Fill out the details below to request an appointment.</p>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="bName">Full Name</label>
+                        <input type="text" id="bName" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="bContact">Phone / Email</label>
+                        <input type="text" id="bContact" required placeholder="Phone number or Email">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bDate">Preferred Date</label>
+                            <input type="date" id="bDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bTime">Preferred Time</label>
+                            <input type="time" id="bTime" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bService">Service Type</label>
+                        <select id="bService" required>
+                            <option value="" disabled selected>Select a service...</option>
+                            <option value="custom">Custom Tattoo</option>
+                            <option value="flash">Flash Tattoo</option>
+                            <option value="coverup">Cover Up</option>
+                            <option value="touchup">Touch Up / Fix</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bDetails">Brief Description</label>
+                        <textarea id="bDetails" rows="3" placeholder="Tell us about your idea, size, placement..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">CONFIRM BOOKING</button>
+                </form>
+            </div>
+            
+            <div id="bookingSuccessContainer" style="display: none;">
+                <div class="success-icon">&#10003;</div>
+                <h2>Appointment Confirmed!</h2>
+                <p>Thank you! Your appointment request has been successfully submitted. Our team will contact you shortly to finalize the details.</p>
+                <button class="submit-btn" id="doneBtn" style="margin-top: 2rem;">DONE</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Color Animation
+        function toggleColor(btn) {
+            const gridItem = btn.closest('.grid-item');
+            const spans = btn.querySelectorAll('span');
+            
+            // Toggle active state on buttons
+            spans.forEach(span => span.classList.toggle('active'));
+            
+            // Trigger animation
+            gridItem.classList.toggle('show-color');
+        }
+
+        // Booking Modal Logic
+        const modal = document.getElementById('bookingModal');
+        const bookBtn = document.getElementById('bookBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+        const bookingForm = document.getElementById('bookingForm');
+        const formContainer = document.getElementById('bookingFormContainer');
+        const successContainer = document.getElementById('bookingSuccessContainer');
+        const doneBtn = document.getElementById('doneBtn');
+
+        function openModal(e) {
+            if(e) e.preventDefault();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+            // Reset form state after fade out
+            setTimeout(() => {
+                bookingForm.reset();
+                formContainer.style.display = 'block';
+                successContainer.style.display = 'none';
+            }, 300);
+        }
+
+        document.querySelectorAll('.open-modal-btn, #bookBtn').forEach(btn => {
+            btn.addEventListener('click', openModal);
+        });
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        if (doneBtn) doneBtn.addEventListener('click', closeModal);
+
+        // Close on outside click
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        }
+
+        // Handle Form Submit
+        if (bookingForm) {
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                formContainer.style.display = 'none';
+                successContainer.style.display = 'flex';
+            });
+        }
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.top-nav');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('mobile-active');
+            });
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
