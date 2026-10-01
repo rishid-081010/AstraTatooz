@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin a Wheel - Astra Tatooz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        .spin-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 1rem;
+            min-height: 80vh;
+        }
+        .spin-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-color);
+            letter-spacing: -1px;
+        }
+        .wheel-box {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            margin-bottom: 3rem;
+            filter: drop-shadow(0 15px 35px rgba(0,0,0,0.6));
+        }
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 6px solid var(--text-color);
+            transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+            background: conic-gradient(
+                #1a0f0a 0deg 60deg,
+                #c9825b 60deg 120deg,
+                #1a0f0a 120deg 180deg,
+                #c9825b 180deg 240deg,
+                #1a0f0a 240deg 300deg,
+                #c9825b 300deg 360deg
+            );
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+        }
+        .wheel-slice {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            height: 20px;
+            transform-origin: 0% 50%;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            margin-top: -10px; /* half height */
+            box-sizing: border-box;
+            letter-spacing: 1px;
+        }
+        /* Slices setup */
+        .slice-1 { transform: rotate(30deg); color: #fff; }
+        .slice-2 { transform: rotate(90deg); color: #1a0f0a; }
+        .slice-3 { transform: rotate(150deg); color: #fff; }
+        .slice-4 { transform: rotate(210deg); color: #1a0f0a; }
+        .slice-5 { transform: rotate(270deg); color: #fff; }
+        .slice-6 { transform: rotate(330deg); color: #1a0f0a; }
+
+        .pointer {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 40px solid #e74c3c;
+            z-index: 10;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+        }
+        .spin-btn-action {
+            padding: 1.2rem 4rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--text-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .spin-btn-action:hover {
+            transform: scale(1.05);
+        }
+        .spin-btn-action:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        #spin-result {
+            margin-top: 2rem;
+            font-size: 1.8rem;
+            font-weight: 800;
+            min-height: 2rem;
+            color: var(--text-color);
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .wheel-box { width: 280px; height: 280px; }
+            .spin-title { font-size: 2.5rem; }
+            .wheel-slice { font-size: 0.9rem; padding-left: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_black.png" alt="Astra Tatooz Logo" class="nav-logo-img">
+            </a>
+        </div>
+        
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav-right">
+            <a href="spin.html" class="active">SPIN A WHEEL</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="policy.html">POLICY</a>
+        </div>
+    </nav>
+
+    <!-- Spin a Wheel Content -->
+    <div class="spin-container">
+        <h1 class="spin-title">SPIN TO WIN</h1>
+        <div class="wheel-box">
+            <div class="pointer"></div>
+            <div class="wheel" id="wheel">
+                <div class="wheel-slice slice-1">10% OFF</div>
+                <div class="wheel-slice slice-2">FREE CARE</div>
+                <div class="wheel-slice slice-3">NO LUCK</div>
+                <div class="wheel-slice slice-4">15% OFF</div>
+                <div class="wheel-slice slice-5">FREE ART</div>
+                <div class="wheel-slice slice-6">$50 OFF</div>
+            </div>
+        </div>
+        <button class="spin-btn-action" id="spinBtn">SPIN NOW</button>
+        <div id="spin-result"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>ASTRA TATOOZ</h3>
+                <p>Creating memories that never fade. Premium tattoos and aftercare.</p>
+            </div>
+            <div class="footer-col">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="spin.html">Spin to Win</a>
+            </div>
+            <div class="footer-col">
+                <h3>FOLLOW US</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Astra Tatooz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const topNav = document.querySelector('.top-nav');
+        if(menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                topNav.classList.toggle('mobile-active');
+            });
+        }
+
+        const wheel = document.getElementById('wheel');
+        const spinBtn = document.getElementById('spinBtn');
+        const resultText = document.getElementById('spin-result');
+        let currentRotation = 0;
+
+        spinBtn.addEventListener('click', () => {
+            spinBtn.disabled = true;
+            resultText.innerText = "";
+            const randomSpins = Math.floor(Math.random() * 5 + 5) * 360;
+            const randomDegrees = Math.floor(Math.random() * 360);
+            currentRotation += randomSpins + randomDegrees;
+            wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+            setTimeout(() => {
+                const normalizedRotation = currentRotation % 360;
+                const pointerAngle = 270;
+                let winningAngle = (pointerAngle - normalizedRotation + 360) % 360;
+                
+                let prize = "";
+                if (winningAngle >= 0 && winningAngle < 60) prize = "10% OFF!";
+                else if (winningAngle >= 60 && winningAngle < 120) prize = "FREE AFTERCARE!";
+                else if (winningAngle >= 120 && winningAngle < 180) prize = "NO LUCK THIS TIME";
+                else if (winningAngle >= 180 && winningAngle < 240) prize = "15% OFF!";
+                else if (winningAngle >= 240 && winningAngle < 300) prize = "FREE CUSTOM ART!";
+                else prize = "$50 OFF!";
+
+                resultText.innerText = "You won: " + prize;
+                spinBtn.disabled = false;
+                spinBtn.innerText = "SPIN AGAIN";
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
