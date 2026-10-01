@@ -1580,3 +1580,8 @@ body.dark-theme .top-nav {
 
 
 
+
+/* White Inset Borders */
+.grid-item, .about-image {
+    border: 3px solid #ffffff;
+}
