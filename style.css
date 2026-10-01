@@ -1585,3 +1585,16 @@ body.dark-theme .top-nav {
 .grid-item, .about-image {
     border: 3px solid #ffffff;
 }
+
+/* Bigger and Bolder Section Titles */
+.testi-title, .portfolio-title, .about-section-title, .shop-title {
+    font-size: 4.5rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+    .testi-title, .portfolio-title, .about-section-title, .shop-title {
+        font-size: 3.2rem !important;
+    }
+}
