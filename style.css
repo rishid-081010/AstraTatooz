@@ -12,7 +12,7 @@
 
 body {
     background-color: transparent;
-    background-image: url('assets/egyptian_bg.jpg');
+    background-image: url('assets/astra_bg.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
     color: var(--text-color);
@@ -571,7 +571,7 @@ body {
 /* Shop Page Styles */
 .shop-body {
     background-color: transparent;
-    background-image: url('assets/egyptian_bg.jpg');
+    background-image: url('assets/astra_bg.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
     color: var(--text-color);
@@ -1462,7 +1462,7 @@ body.dark-theme .top-nav {
     /* Global Resets */
     body {
     background-color: transparent;
-    background-image: url('assets/egyptian_bg.jpg');
+    background-image: url('assets/astra_bg.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
     color: var(--text-color);
@@ -1553,6 +1553,7 @@ body.dark-theme .top-nav {
     .orbit-item { position: relative !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; width: 100% !important; height: 300px !important; margin-bottom: 1rem; }
     .orbit-line { display: none; }
 }
+
 
 
 
