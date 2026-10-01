@@ -1510,7 +1510,7 @@ body.dark-theme .top-nav {
     /* Gallery */
     .gallery-wrapper { padding: 1rem 0; }
     .gallery-grid { display: flex; width: max-content; gap: 15px; padding: 0; animation: scrollGallery 15s linear infinite; }
-    .grid-item { width: 30vw; flex-shrink: 0; border-radius: 15px; }
+    .grid-item { width: 36vw; flex-shrink: 0; border-radius: 15px; }
     .grid-item img, .hover-color-img { border-radius: inherit; }
     .mobile-clone { display: block; }
     @keyframes scrollGallery {
@@ -1581,4 +1581,5 @@ body.dark-theme .top-nav {
 .gallery-wrapper { width: 100%; overflow: hidden; }
 .mobile-clone { display: none; }
 .grid-item img, .hover-color-img { border-radius: 12px; }
+
 
