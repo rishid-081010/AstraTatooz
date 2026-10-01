@@ -1,6 +1,7 @@
 :root {
-    --bg-color: #e8e6e5;
-    --text-color: #0a0a0a;
+    --bg-color: #c9825b;
+    --text-color: #1a0f0a;
+    --card-bg: rgba(255, 245, 235, 0.9);
 }
 
 * {
@@ -10,7 +11,10 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: transparent;
+    background-image: url('assets/egyptian_bg.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
@@ -187,7 +191,7 @@ body {
 }
 
 .review-card {
-    background: #ffffff;
+    background: var(--card-bg);
     border-radius: 20px;
     padding: 2.5rem;
     display: flex;
@@ -291,7 +295,7 @@ body {
     bottom: 0;
     left: var(--pct);
     width: 2px;
-    background: #ffffff;
+    background: var(--card-bg);
     pointer-events: none;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -513,7 +517,7 @@ body {
 .submit-btn {
     width: 100%;
     padding: 1rem;
-    background: #fff;
+    background: var(--card-bg);
     color: #000;
     border: none;
     border-radius: 8px;
@@ -566,7 +570,16 @@ body {
 
 /* Shop Page Styles */
 .shop-body {
-    background-color: var(--bg-color);
+    background-color: transparent;
+    background-image: url('assets/egyptian_bg.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .shop-body .top-nav a.active {
@@ -608,7 +621,7 @@ body {
 }
 
 .product-card {
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0,0,0,0.04);
@@ -849,7 +862,7 @@ body {
 }
 
 .toggle-widget span.active {
-    background: #fff;
+    background: var(--card-bg);
     color: #000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -1056,7 +1069,7 @@ body.dark-theme .top-nav {
 /* Premium About Section */
 .premium-about-section {
     padding: 8rem 5%;
-    background-color: var(--bg-color);
+    background-color: transparent;
 }
 .section-subtitle {
     font-size: 0.8rem;
@@ -1237,7 +1250,7 @@ body.dark-theme .top-nav {
 /* Bottom CTA Section */
 .bottom-cta-section {
     padding: 7rem 2rem;
-    background-color: var(--bg-color);
+    background-color: transparent;
     text-align: center;
     border-top: 1px solid rgba(0,0,0,0.06);
 }
@@ -1448,9 +1461,17 @@ body.dark-theme .top-nav {
 @media (max-width: 768px) {
     /* Global Resets */
     body {
-        overflow-x: hidden;
-        width: 100%;
-    }
+    background-color: transparent;
+    background-image: url('assets/egyptian_bg.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 
     /* Top Nav */
     .menu-toggle { display: block; right: 1.5rem; top: 1.5rem; font-size: 2rem; }
@@ -1532,3 +1553,6 @@ body.dark-theme .top-nav {
     .orbit-item { position: relative !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; width: 100% !important; height: 300px !important; margin-bottom: 1rem; }
     .orbit-line { display: none; }
 }
+
+
+
