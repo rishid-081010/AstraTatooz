@@ -1508,8 +1508,15 @@ body.dark-theme .top-nav {
     .btn-outline, .btn-primary { padding: 1rem 2rem; font-size: 0.9rem; }
 
     /* Gallery */
-    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 0 8px 8px 8px; }
-    .grid-item { border-radius: 8px; }
+    .gallery-wrapper { padding: 1rem 0; }
+    .gallery-grid { display: flex; width: max-content; gap: 15px; padding: 0; animation: scrollGallery 15s linear infinite; }
+    .grid-item { width: 30vw; flex-shrink: 0; border-radius: 15px; }
+    .grid-item img, .hover-color-img { border-radius: inherit; }
+    .mobile-clone { display: block; }
+    @keyframes scrollGallery {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-50% - 7.5px)); }
+    }
 
     /* Testimonials */
     .testimonials-section { padding: 3rem 1.5rem; }
@@ -1569,4 +1576,9 @@ body.dark-theme .top-nav {
 
 
 
+
+
+.gallery-wrapper { width: 100%; overflow: hidden; }
+.mobile-clone { display: none; }
+.grid-item img, .hover-color-img { border-radius: 12px; }
 
