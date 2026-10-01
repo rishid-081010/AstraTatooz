@@ -196,7 +196,7 @@ body {
 .review-card {
     background: var(--card-bg);
     border-radius: 20px;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -204,13 +204,7 @@ body {
     flex-shrink: 0;
 }
 
-.review-text {
-    font-size: 0.85rem;
-    line-height: 1.5;
-    color: #e0e0e0;
-    flex-grow: 1;
-    margin-bottom: 1.5rem;
-}
+.review-text { font-size: 0.85rem; line-height: 1.4; color: #e0e0e0; margin-bottom: 1rem; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 
 .review-images {
     width: 100%;
@@ -219,7 +213,7 @@ body {
 
 .review-images img {
     width: 100%;
-    height: 180px;
+    height: 100px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -1485,7 +1479,7 @@ body.dark-theme .top-nav {
 
     /* Top Nav */
     .menu-toggle { display: block; right: 1.5rem; top: 1.5rem; font-size: 2rem; }
-    .top-nav { padding: 1.5rem; }
+    .top-nav { padding: 1rem; }
     .top-nav .nav-left, .top-nav .nav-right { display: none; flex-direction: column; width: 100%; text-align: center; gap: 1.5rem; margin-top: 2rem; }
     .nav-center { left: 1.5rem; top: 1.2rem; transform: none; position: absolute; }
     .nav-logo-img {
@@ -1522,10 +1516,10 @@ body.dark-theme .top-nav {
     .testimonials-section { padding: 3rem 1.5rem; }
     .testi-title { font-size: 2rem; text-align: center; margin-bottom: 1rem; }
     .testi-header > div { flex-direction: column; text-align: center; justify-content: center; }
-    .review-card { width: 75vw; padding: 1.2rem; border-radius: 15px; }
+    .review-card { width: 75vw; padding: 1rem; border-radius: 15px; }
     .review-author { font-size: 1rem; }
     .review-text { font-size: 0.8rem; margin-bottom: 0.8rem; }
-    .review-images img { height: 140px; border-radius: 8px; }
+    .review-images img { height: 80px; border-radius: 6px; }
 
     /* About Section */
     .premium-about-section { padding: 4rem 1.5rem; }
@@ -1581,6 +1575,7 @@ body.dark-theme .top-nav {
 .gallery-wrapper { width: 100%; overflow: hidden; }
 .mobile-clone { display: none; }
 .grid-item img, .hover-color-img { border-radius: 12px; }
+
 
 
 
