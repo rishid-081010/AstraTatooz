@@ -1516,7 +1516,7 @@ body.dark-theme .top-nav {
     .testimonials-section { padding: 3rem 1.5rem; }
     .testi-title { font-size: 2rem; text-align: center; margin-bottom: 1rem; }
     .testi-header > div { flex-direction: column; text-align: center; justify-content: center; }
-    .review-card { width: 75vw; padding: 1rem; border-radius: 15px; }
+    .review-card { width: 37.5vw; padding: 1rem; border-radius: 15px; }
     .review-author { font-size: 1rem; }
     .review-text { font-size: 0.8rem; margin-bottom: 0.8rem; }
     .review-images img { height: 80px; border-radius: 6px; }
@@ -1575,6 +1575,7 @@ body.dark-theme .top-nav {
 .gallery-wrapper { width: 100%; overflow: hidden; }
 .mobile-clone { display: none; }
 .grid-item img, .hover-color-img { border-radius: 12px; }
+
 
 
 
