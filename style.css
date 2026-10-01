@@ -1443,3 +1443,92 @@ body.dark-theme .top-nav {
         text-align: center;
     }
 }
+
+/* --- COMPREHENSIVE MOBILE OVERRIDES (ADDED) --- */
+@media (max-width: 768px) {
+    /* Global Resets */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Top Nav */
+    .menu-toggle { display: block; right: 1.5rem; top: 1.5rem; font-size: 2rem; }
+    .top-nav { padding: 1.5rem; }
+    .top-nav .nav-left, .top-nav .nav-right { display: none; flex-direction: column; width: 100%; text-align: center; gap: 1.5rem; margin-top: 2rem; }
+    .nav-center { left: 1.5rem; top: 1.2rem; transform: none; position: absolute; }
+    .nav-logo-img { height: 30px; }
+    
+    .top-nav.mobile-active {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+        background: var(--bg-color); z-index: 1000; justify-content: flex-start; padding-top: 6rem;
+    }
+    .top-nav.mobile-active .nav-left, .top-nav.mobile-active .nav-right { display: flex; }
+    
+    /* Hero Section */
+    .hero-section { padding: 0 1.5rem; margin-top: 3rem; }
+    .huge-title { font-size: 15vw; letter-spacing: -2px; margin-bottom: 1.5rem; white-space: normal; line-height: 1; word-break: break-word; }
+    .hero-subtitles { flex-direction: column; gap: 0.8rem; text-align: center; }
+    .subtitle-left, .subtitle-right { font-size: 0.95rem; }
+    
+    /* CTA */
+    .cta-container { margin-top: 3rem; margin-bottom: 3rem; }
+    .btn-outline, .btn-primary { padding: 1rem 2rem; font-size: 0.9rem; }
+
+    /* Gallery */
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 0 8px 8px 8px; }
+    .grid-item { border-radius: 8px; }
+
+    /* Testimonials */
+    .testimonials-section { padding: 3rem 1.5rem; }
+    .testi-title { font-size: 2rem; text-align: center; margin-bottom: 1rem; }
+    .testi-header > div { flex-direction: column; text-align: center; justify-content: center; }
+    .review-card { width: 85vw; padding: 1.5rem; border-radius: 15px; }
+    .review-author { font-size: 1rem; }
+    .review-text { font-size: 0.9rem; margin-bottom: 1rem; }
+    .review-images img { height: 200px; border-radius: 8px; }
+
+    /* About Section */
+    .premium-about-section { padding: 4rem 1.5rem; }
+    .about-container { gap: 4rem; width: 100%; max-width: 100%; }
+    .about-row, .about-row.reverse-row { flex-direction: column; gap: 2rem; }
+    .about-section-title { font-size: 2.2rem; margin-bottom: 2rem; }
+    .about-text { margin-top: 0; }
+    .about-text h2 { font-size: 1.8rem; line-height: 1.2; }
+    .about-text p { font-size: 1rem; line-height: 1.6; }
+    .about-image { border-radius: 12px; max-width: 100%; }
+    
+    /* Bottom CTA */
+    .bottom-cta-section { padding: 4rem 1.5rem; }
+    .bottom-cta-title { font-size: 2.2rem; }
+    .bottom-cta-desc { font-size: 1rem; }
+
+    /* Footer */
+    .main-footer { padding: 3rem 1.5rem 2rem; }
+    .footer-container { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2rem; }
+    .footer-brand .footer-logo { font-size: 1.4rem; }
+    .footer-col h4 { margin-bottom: 1rem; }
+    
+    /* Shop */
+    .shop-hero { padding: 4rem 1.5rem 2rem; }
+    .shop-title { font-size: 2.2rem; }
+    .shop-container { padding: 1rem 1.5rem; margin-bottom: 4rem; }
+    .product-grid { grid-template-columns: 1fr; gap: 2rem; }
+    
+    /* Portfolio */
+    .portfolio-hero { padding: 4rem 1.5rem 2rem; }
+    .portfolio-title { font-size: 2.2rem; }
+    .portfolio-container { padding: 1rem 1.5rem; margin-bottom: 4rem; }
+    .masonry-grid { column-count: 1; column-gap: 0; }
+    .masonry-item { margin-bottom: 1rem; }
+    
+    /* Booking Modal */
+    .booking-modal { padding: 2rem 1.5rem; width: 95%; max-height: 90vh; overflow-y: auto; }
+    .form-row { flex-direction: column; gap: 0; }
+    
+    /* Orbital */
+    .orbital-container { height: auto; overflow: visible; margin-top: 1rem; padding: 0 1rem 3rem 1rem; display: block; }
+    .orbital-center h1 { font-size: 2.5rem; }
+    .orbit-item { position: relative !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; width: 100% !important; height: 300px !important; margin-bottom: 1rem; }
+    .orbit-line { display: none; }
+}
