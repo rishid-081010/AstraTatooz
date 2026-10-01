@@ -13,7 +13,9 @@
 body {
     background-color: transparent;
     background-image: url('assets/astra_bg.jpg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
@@ -574,7 +576,9 @@ body {
 .shop-body {
     background-color: transparent;
     background-image: url('assets/astra_bg.jpg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
@@ -947,7 +951,9 @@ body.dark-theme {
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.02) 2px, transparent 2px),
         radial-gradient(circle at 75% 75%, rgba(255,255,255,0.02) 2px, transparent 2px);
     background-size: 300px 300px;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     overflow-x: hidden;
 }
 
@@ -1465,7 +1471,9 @@ body.dark-theme .top-nav {
     body {
     background-color: transparent;
     background-image: url('assets/astra_bg.jpg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
@@ -1556,6 +1564,7 @@ body.dark-theme .top-nav {
     .orbit-item { position: relative !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; width: 100% !important; height: 300px !important; margin-bottom: 1rem; }
     .orbit-line { display: none; }
 }
+
 
 
 
